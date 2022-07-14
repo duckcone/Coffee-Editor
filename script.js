@@ -1,0 +1,45 @@
+var app = new Vue({
+    el: "#app",
+    data: {
+
+        editing: false,
+        cupTypes: ['small', 'medium', 'large', 'mock'],
+        coffees: [{
+                name: "Expresso",
+                coffee: 80,
+                bubble: 0,
+                water: 0,
+                milk: 0,
+                type: "small"
+            },
+            {
+                name: "Americano",
+                coffee: 40,
+                bubble: 0,
+                water: 40,
+                milk: 0,
+                type: "small"
+
+            },
+            {
+                name: "Cappuccino",
+                coffee: 40,
+                bubble: 0,
+                water: 0,
+                milk: 50,
+                type: "large"
+            },
+            {
+                name: "Latte",
+                coffee: 30,
+                bubble: 30,
+                water: 0,
+                milk: 30,
+                type: "mock"
+            }
+        ],
+
+        favoriteType: "Expresso"
+
+    }
+})
